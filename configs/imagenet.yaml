@@ -1,0 +1,15 @@
+gamma: 800
+beta: 400
+pieta: 0.09
+hidden_dim: 4096
+z_dim: 1024
+n_clusters: 1000
+epo: 100
+bs: 2048
+lr: 1.e-4
+lr_c: 1.e-4
+eps: 0.1
+data_dir: ./data/datasets/imagenet_train_clip.pt
+data_dir_val: ./data/datasets/imagenet_val_clip.pt
+warmup: 2000
+save_every: 25

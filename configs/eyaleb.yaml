@@ -1,0 +1,14 @@
+gamma: 200
+beta: 50
+pieta: 0.03
+hidden_dim: 1080
+z_dim: 256
+n_clusters: 38
+epo: 5000
+lr: 1.e-4
+eps: 0.1
+data_dir: ./data/datasets/YaleBCrop025.mat
+warmup: 100
+save_every: 5000
+channels: [1, 10, 20, 30]
+kernels: [5, 3, 3]

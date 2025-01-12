@@ -1,0 +1,14 @@
+gamma: 200
+beta: 100
+pieta: 0.02
+hidden_dim: 12800
+z_dim: 100
+n_clusters: 100
+epo: 10000
+lr: 1.e-4
+eps: 0.05
+data_dir: ./data/datasets/COIL100.mat
+warmup: 100
+save_every: 5000
+channels: [1, 50]
+kernels: [5]
