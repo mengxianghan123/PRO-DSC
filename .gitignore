@@ -1,5 +1,5 @@
 **/__pycache__/
 exps/*
-!exps/
+# !exps/
 data/datasets/*
-!data/datasets/
+# !data/datasets/
