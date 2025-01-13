@@ -24,7 +24,7 @@
 PRO-DSC (Principled fRamewOrk for Deep Subspace Clustering) is designed to learn structured representations and self-expressive coefficients in a unified manner. Specifically, in PRO-DSC, we incorporate an effective regularization on the learned representations into the self-expressive model, and prove that the regularized self-expressive model is able to prevent feature space collapse and the learned optimal representations under certain condition lie on a union of orthogonal subspaces. 
 <!-- Moreover, we provide a scalable and efficient approach to implement our PRO-DSC and conduct extensive experiments to verify our theoretical findings and demonstrate the superior performance of our proposed deep subspace clustering approach. -->
 
-### Clustering on the CLIP Features
+## Clustering on the CLIP Features
 Step 1: Download the extracted CLIP features from [here](https://drive.google.com/drive/folders/1L9jH8zRF3To6Hb_B0UZ6PbknhgusWm5_?usp=drive_link) and put them under `./data/datasets`
 
 Step 2: Train PRO-DSC by running:
@@ -33,7 +33,7 @@ Step 2: Train PRO-DSC by running:
 python main.py --data cifar10/cifar100/cifar20/tinyimagenet/imagenet/imagenetdogs
 ```
 
-### Clustering on Classical Subspace Clustering Benchmarks
+## Clustering on Classical Subspace Clustering Benchmarks
 Step 1: Download the datasets from [here](https://drive.google.com/drive/folders/1C4qlqYOW4-YulIwgkNfqMM7dZ2O5-BK_?usp=sharing) and put them under `./data/datasets`
 
 Step 2: Train PRO-DSC by running:
