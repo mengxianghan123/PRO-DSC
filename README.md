@@ -7,13 +7,13 @@
 </p> -->
 
 ## Outlines
-- [💥 News 💥]()
-- [👀 About PRO-DSC]()
-- [Clustering on the CLIP Features]()
-- [Clustering on Classical Subspace Clustering Benchmarks]()
-- [Training From Scratch with Raw Image Input ]()
-- [📜 License](https://github.com/We-Math/We-Math/blob/main/README.md#-license)
-<!-- - [🤝 Contributors](https://github.com/We-Math/We-Math/blob/main/README.md#-contributors) -->
+- [💥 News 💥](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#-news-)
+- [👀 About PRO-DSC](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#-about-pro-dsc)
+- [Clustering on the CLIP Features](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#clustering-on-the-clip-features)
+- [Clustering on Classical Subspace Clustering Benchmarks](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#clustering-on-classical-subspace-clustering-benchmarks)
+- [Training From Scratch with Raw Image Input ](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#training-from-scratch-with-raw-image-input)
+- [📜 License](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#-license)
+<!-- - [🤝 Contributors]() -->
 
 ## 💥 News 💥
   **[2025.1.22]** Our paper is now accessible at https://arxiv.org/abs/???.
@@ -25,7 +25,7 @@ PRO-DSC (Principled fRamewOrk for Deep Subspace Clustering) is designed to learn
 <!-- Moreover, we provide a scalable and efficient approach to implement our PRO-DSC and conduct extensive experiments to verify our theoretical findings and demonstrate the superior performance of our proposed deep subspace clustering approach. -->
 
 ### Clustering on the CLIP Features
-Step 1: Download the extracted CLIP features from xxx and put them under ./data/datasets
+Step 1: Download the extracted CLIP features from [here](https://drive.google.com/drive/folders/1L9jH8zRF3To6Hb_B0UZ6PbknhgusWm5_?usp=drive_link) and put them under `./data/datasets`
 Step 2: Train PRO-DSC by running:
 
 ```sh
@@ -33,7 +33,7 @@ python main.py --data cifar10/cifar100/cifar20/tinyimagenet/imagenet/imagenetdog
 ```
 
 ### Clustering on Classical Subspace Clustering Benchmarks
-Step 1: Download the datasets from xxx and put them under ./data/datasets
+Step 1: Download the datasets from [here](https://drive.google.com/drive/folders/1C4qlqYOW4-YulIwgkNfqMM7dZ2O5-BK_?usp=sharing) and put them under `./data/datasets`
 Step 2: Train PRO-DSC by running:
 
 ```sh
