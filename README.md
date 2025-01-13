@@ -26,6 +26,7 @@ PRO-DSC (Principled fRamewOrk for Deep Subspace Clustering) is designed to learn
 
 ### Clustering on the CLIP Features
 Step 1: Download the extracted CLIP features from [here](https://drive.google.com/drive/folders/1L9jH8zRF3To6Hb_B0UZ6PbknhgusWm5_?usp=drive_link) and put them under `./data/datasets`
+
 Step 2: Train PRO-DSC by running:
 
 ```sh
@@ -34,6 +35,7 @@ python main.py --data cifar10/cifar100/cifar20/tinyimagenet/imagenet/imagenetdog
 
 ### Clustering on Classical Subspace Clustering Benchmarks
 Step 1: Download the datasets from [here](https://drive.google.com/drive/folders/1C4qlqYOW4-YulIwgkNfqMM7dZ2O5-BK_?usp=sharing) and put them under `./data/datasets`
+
 Step 2: Train PRO-DSC by running:
 
 ```sh
