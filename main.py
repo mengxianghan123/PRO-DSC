@@ -46,12 +46,18 @@ parser.add_argument('--bs', type=int, default=1024,
                     help='input batch size for training')
 parser.add_argument('--lr', type=float, default=1e-4,
                     help='learning rate (default: 0.0001)')
+parser.add_argument('--lr_c', type=float, default=1e-4,
+                    help='learning rate for clustering head (default: 0.0001)')
 parser.add_argument('--momo', type=float, default=0.9,
                     help='momentum (default: 0.9)')
 parser.add_argument('--wd1', type=float, default=1e-4,
                     help='weight decay for all other parameters except clustering head (default: 1e-4)')
 parser.add_argument('--wd2', type=float, default=5e-3,
                     help='weight decay for clustering head (default: 5e-3)')
+parser.add_argument('--pieta', type=float, default=0.1,
+                    help='hyper-parameter for Sinkhorn projection')
+parser.add_argument('--piiter', type=int, default=1,
+                    help='hyper-parameter for Sinkhorn projection')
 parser.add_argument('--eps', type=float, default=0.1,
                     help='eps squared for total coding rate (default: 0.1)')
 parser.add_argument('--warmup', type=int, default=-1,
@@ -80,7 +86,7 @@ writer = init_pipeline(dir_name, args)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = PRO_DSC(input_dim=768, hidden_dim=args.hidden_dim, z_dim=args.z_dim).to(device) # input_dim=768
-sink_layer = SinkhornDistance(args.pieta, max_iter=1)
+sink_layer = SinkhornDistance(args.pieta, max_iter=args.piiter)
 
 # Loading features and labels
 if args.data.lower() in ['cifar10','cifar100','cifar20']:
@@ -214,21 +220,17 @@ with tqdm(total=args.epo) as progress_bar:
             model.eval()
             with torch.no_grad():
                 logits_list = []
-                z_list = []
                 y_list = []
                 
                 for step, (x, y) in enumerate(test_loader):
                     x, y = x.float().to(device), y.to(device)
                     y_list.append(y.detach().cpu().numpy())
-                    z, logits = model(x)
+                    _, logits = model(x)
                     logits_list.append(logits)
-                    z_list.append(z)
                     
                 logits = torch.cat(logits_list, dim=0)
-                z = torch.cat(z_list, dim=0)
                 
                 self_coeff = (logits @ logits.T).abs()
-                self_coeff = self_coeff - torch.diag(torch.diag(self_coeff))
                 
                 y_np = np.concatenate(y_list, axis=0)
                 acc_lst, nmi_lst, pred_lst = spectral_clustering_metrics(self_coeff.detach().cpu().numpy(),args.n_clusters, y_np)

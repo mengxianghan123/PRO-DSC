@@ -1,6 +1,7 @@
 gamma: 300
 beta: 400
 pieta: 0.1
+piiter: 5
 hidden_dim: 4096
 z_dim: 128
 n_clusters: 15
