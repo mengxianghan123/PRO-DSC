@@ -1,4 +1,4 @@
-# [Exploring a Principled Framework for Deep Subspace Clustering](https://arxiv.org/pdf/???)
+# [Exploring a Principled Framework for Deep Subspace Clustering](https://openreview.net/forum?id=7psWohxvxp)
 
 <!-- ![Paperwithcode]() -->
 
@@ -16,7 +16,7 @@
 <!-- - [🤝 Contributors]() -->
 
 ## 💥 News 💥
-  **[2025.1.22]** Our paper is now accessible at https://arxiv.org/abs/???.
+  **[2025.1.23]** Our paper is accepted by ICLR 2025! The paper is now accessible at [Openreview](https://openreview.net/forum?id=7psWohxvxp).
   
 
 ## 👀 About PRO-DSC
@@ -58,6 +58,13 @@ Our code is distributed under the [CC BY-NC 4.0](https://creativecommons.org/lic
 If you find **PRO-DSC** useful for your your research and applications, please kindly cite using this BibTeX:
 
 ```bibtex
-
+@inproceedings{
+PRO-DSC-ICLR2025,
+title={Exploring a Principled Framework for Deep Subspace Clustering},
+author={Anonymous},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=7psWohxvxp}
+}
 
 ```
