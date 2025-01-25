@@ -2,9 +2,15 @@
 
 <!-- ![Paperwithcode]() -->
 
-<!-- <p align="center">
-    <img src="./assets/logo.png" width="35%"> <br>
-</p> -->
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exploring-a-principled-framework-for-deep/image-clustering-on-tiny-imagenet)](https://paperswithcode.com/sota/image-clustering-on-tiny-imagenet?p=exploring-a-principled-framework-for-deep)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exploring-a-principled-framework-for-deep/image-clustering-on-cifar-10)](https://paperswithcode.com/sota/image-clustering-on-cifar-10?p=exploring-a-principled-framework-for-deep)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exploring-a-principled-framework-for-deep/image-clustering-on-cifar-100)](https://paperswithcode.com/sota/image-clustering-on-cifar-100?p=exploring-a-principled-framework-for-deep)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exploring-a-principled-framework-for-deep/unsupervised-image-classification-on-cifar-20)](https://paperswithcode.com/sota/unsupervised-image-classification-on-cifar-20?p=exploring-a-principled-framework-for-deep)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exploring-a-principled-framework-for-deep/image-clustering-on-imagenet)](https://paperswithcode.com/sota/image-clustering-on-imagenet?p=exploring-a-principled-framework-for-deep)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exploring-a-principled-framework-for-deep/image-clustering-on-imagenet-dog-15)](https://paperswithcode.com/sota/image-clustering-on-imagenet-dog-15?p=exploring-a-principled-framework-for-deep)
+
+<p align="center">
+    <img src="img/abstract.jpg" />
 
 ## Outlines
 - [💥 News 💥](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#-news-)
