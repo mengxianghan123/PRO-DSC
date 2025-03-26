@@ -1,4 +1,4 @@
-# [Exploring a Principled Framework for Deep Subspace Clustering](https://openreview.net/forum?id=7psWohxvxp)
+# Exploring a Principled Framework for Deep Subspace Clustering
 
 <!-- ![Paperwithcode]() -->
 
@@ -17,12 +17,11 @@
 - [👀 About PRO-DSC](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#-about-pro-dsc)
 - [Clustering on the CLIP Features](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#clustering-on-the-clip-features)
 - [Clustering on Classical Subspace Clustering Benchmarks](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#clustering-on-classical-subspace-clustering-benchmarks)
-- [Training From Scratch with Raw Image Input ](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#training-from-scratch-with-raw-image-input)
 - [📜 License](https://github.com/mengxianghan123/PRO-DSC?tab=readme-ov-file#-license)
 <!-- - [🤝 Contributors]() -->
 
 ## 💥 News 💥
-  **[2025.1.23]** Our paper is accepted by ICLR 2025! The paper is now accessible at [Openreview](https://openreview.net/forum?id=7psWohxvxp).
+  **[2025.1.23]** Our paper is accepted by ICLR 2025! The paper is now accessible at [Openreview](https://openreview.net/forum?id=7psWohxvxp) and [arXiv](https://arxiv.org/abs/2503.17288).
   
 
 ## 👀 About PRO-DSC
@@ -49,11 +48,6 @@ python main_subspace.py --data eyaleb/orl/coil100
 ```
 
 
-## Training From Scratch with Raw Image Input 
-
-TBD
-
-
 ## 📜 License
 
 Our code is distributed under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license.
@@ -67,7 +61,7 @@ If you find **PRO-DSC** useful for your your research and applications, please k
 @inproceedings{
 PRO-DSC-ICLR2025,
 title={Exploring a Principled Framework for Deep Subspace Clustering},
-author={Anonymous},
+author={Meng, Xianghan and Huang, Zhiyuan and He, Wei and Qi, Xianbiao and Xiao, Rong and Li, Chun-Guang},
 booktitle={The Thirteenth International Conference on Learning Representations},
 year={2025},
 url={https://openreview.net/forum?id=7psWohxvxp}
